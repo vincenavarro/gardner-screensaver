@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+html, body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+	background-color: #1d1f20;
+	background-image: url('https://f002.backblazeb2.com/file/gardner-logos/palm.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	color: #feab3a;
+	font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+	font-size: 4.5rem;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+#slideshow {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+#slideshow img {
+	opacity: 0;
+	transition: ease 2s;
+	position: absolute;
+	object-fit: contain;
+	max-width: 90%;
+	max-height: 90%;
+}
