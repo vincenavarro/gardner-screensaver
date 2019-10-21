@@ -2,9 +2,9 @@
 
 const runSlideshow = () => {
   const slides = document.querySelectorAll('#slideshow > img');
+  slides[0].style.opacity = 1;
 
   let slideIndex = 0;
-  slides[0].style.opacity = 1;
 
   const nextSlide = () => {
     // If end of slide show, return to first slide.
@@ -16,7 +16,7 @@ const runSlideshow = () => {
 
   setInterval(() => {
     nextSlide();
-  }, 4000);
+  }, 5000);
 };
 
 document.addEventListener('DOMContentLoaded', () => runSlideshow(), false);
