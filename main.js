@@ -17,4 +17,4 @@ const runSlideshow = () => {
   }, 5000);
 };
 
-document.addEventListener('DOMContentLoaded', () => runSlideshow(), false);
+document.addEventListener('DOMContentLoaded', runSlideshow);
