@@ -2,14 +2,14 @@
 
 const runSlideshow = () => {
   const slides = document.querySelectorAll('#slideshow > img');
-  const index = { value: 0 };
+  let index = 0;
 
   const nextSlide = () => {
     slides.forEach(slide => (slide.style.opacity = 0));
-    slides[index.value].style.opacity = 1;
+    slides[index].style.opacity = 1;
 
     // If end of slide show, return to first slide.
-    index.value == slides.length - 1 ? index.value = 0 : index.value++;
+    index == slides.length - 1 ? index = 0 : index++;
   };
 
   setInterval(() => {
