@@ -12,7 +12,7 @@ body {
   height: 100%;
   overflow: hidden;
   background-color: #1d1f20;
-  background-image: url('https://f002.backblazeb2.com/file/gardner-logos/palm.svg');
+  background-image: url('https://f002.backblazeb2.com/file/gardner-logos/tree.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -69,6 +69,8 @@ header h1 {
   justify-content: center;
   width: 100%;
   height: 100%;
+  box-shadow: none;
+  background: none;
 }
 
 #slideshow img {
@@ -81,4 +83,6 @@ header h1 {
   object-fit: contain;
   max-width: 90%;
   max-height: 90%;
+  box-shadow: none;
+  background: none;
 }
