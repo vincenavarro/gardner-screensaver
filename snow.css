@@ -1,0 +1,63 @@
+.mei-ling-zhou, .snow {
+	z-index: 100;
+	pointer-events: none;
+}
+
+.mei-ling-zhou {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+}
+
+.snow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	animation: falling linear infinite both;
+	transform: translate3D(0, -100%, 0);
+}
+
+.snow--near {
+	animation-duration: 10s;
+	background-image: url("https://f002.backblazeb2.com/file/gardner-logos/snow-near.png");
+	background-size: contain;
+}
+
+.snow--near + .snow--alt {
+	animation-delay: 5s;
+}
+
+.snow--mid {
+	animation-duration: 20s;
+	background-image: url("https://f002.backblazeb2.com/file/gardner-logos/snow-mid.png");
+	background-size: contain;
+}
+
+.snow--mid + .snow--alt {
+	animation-delay: 10s;
+}
+
+.snow--far {
+	animation-duration: 30s;
+	background-image: url("https://f002.backblazeb2.com/file/gardner-logos/snow-far.png");
+	background-size: contain;
+}
+
+.snow--far + .snow--alt {
+	animation-delay: 15s;
+}
+
+@keyframes falling {
+	0% {
+		transform: translate3D(-7.5%, -100%, 0);
+	}
+
+	100% {
+		transform: translate3D(7.5%, 100%, 0);
+	}
+}
